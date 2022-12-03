@@ -1,7 +1,14 @@
 {% extends 'base.html'%}
 {% block content %}
     <h1> List of Snacks : </h1>
+    <button><a href="{% url 'home'%}">Home</a></button><br>
     {% for snack in object_list %}
-        <h2>{{"-"}}{{snack.name }}{{","}} {{snack.purchaser}}</h2>
+        <div>
+        <h2>{{"-"}}{{snack.name }}</h2> 
+        </div>
+        <img src="{{snack.img_url}}" alt="{{snack.name}}">
+        <button><a href="{% url 'details' snack.id %}">Details</a></button>
+        
     {% endfor %}
 {% endblock content%}
+

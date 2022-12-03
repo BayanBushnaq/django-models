@@ -1,0 +1,12 @@
+{% extends 'base.html'%}
+{% block content %}
+    
+<h2> Title : {{"-"}}{{snack.name }}</h2> 
+<img src="{{snack.img_url}}" alt="{{snack.name}}">
+<h3>description :{{snack.description}}</h3>
+<h3>purchaser : {{snack.purchaser}}</h3><br>
+
+
+
+<button><a href="{% url 'home'%}">Home</a></button>
+{% endblock content%}
