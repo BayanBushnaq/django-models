@@ -31,5 +31,5 @@
 ### All tests completed perfectly.
 
 #### Pull Request Link:
-[Pull request](https://github.com/BayanBushnaq/django-models/pull/2/)
+[Pull request](https://github.com/BayanBushnaq/django-models/pull/3)
 
