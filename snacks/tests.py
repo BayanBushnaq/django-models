@@ -8,7 +8,7 @@ class SnacksTests(SimpleTestCase):
         response = self.client.get(url)
         self.assertEqual(response.status_code , 200)
 
-    def test_about_page_status(self):
+    def test_snack_list_status(self):
         url = reverse('snack_list')
         response = self.client.get(url)
         self.assertEqual(response.status_code , 200)
@@ -18,7 +18,7 @@ class SnacksTests(SimpleTestCase):
         response = self.client.get(url)
         self.assertTemplateUsed(response,'home.html')
 
-    def test_about_page_template(self):
+    def test_snack_list_template(self):
         url = reverse('snack_list')
         response = self.client.get(url)
         self.assertTemplateUsed(response,'about.html')
