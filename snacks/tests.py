@@ -22,3 +22,6 @@ class SnacksTests(SimpleTestCase):
         url = reverse('snack_list')
         response = self.client.get(url)
         self.assertTemplateUsed(response,'about.html')
+
+
+   # test
